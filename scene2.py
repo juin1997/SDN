@@ -1,11 +1,5 @@
-"""Custom topology example
-
-Two directly connected switches plus a host for each switch:
-
-   host --- switch --- switch --- host
-
-Adding the 'topos' dict with a key/value pair to generate our newly defined
-topology enables one to pass in '--topo=mytopo' from the command line.
+"""
+create by Jun Yu 2018.1.21
 """
 
 from mininet.topo import Topo
