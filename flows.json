@@ -1,0 +1,162 @@
+
+s2
+[
+    "s2_2_1"
+    {
+        "flow-node-inventory:flow": [
+            {
+                "id": "0",
+                "flow-name": "s2_2_1",
+                "cookie": 256,
+                "instructions": {
+                    "instruction": [
+                        {
+                            "order": 0,
+                            "apply-actions": {
+                                "action": [
+                                    {
+                                        "order": 0,
+                                        "output-action": {
+                                            "output-node-connector": "1"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "priority": 1000,
+                "table_id": 0,
+                "match": {
+                    "ipv4-destination": "10.0.0.1/32",
+                    "in-port": "2",
+                    "ethernet-match": {
+                        "ethernet-type": {
+                            "type": 2048
+                        }
+                    }
+                }
+            }
+        ]
+    }
+
+    "s2_1_2"
+    {
+        "flow-node-inventory:flow": [
+            {
+                "id": "1",
+                "flow-name": "s2_1_2",
+                "cookie": 256,
+                "instructions": {
+                    "instruction": [
+                        {
+                            "order": 0,
+                            "apply-actions": {
+                                "action": [
+                                    {
+                                        "order": 0,
+                                        "output-action": {
+                                            "output-node-connector": "2"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "priority": 1000,
+                "table_id": 0,
+                "match": {
+                    "ipv4-source": "10.0.0.1/32",
+                    "in-port": "1",
+                    "ethernet-match": {
+                        "ethernet-type": {
+                            "type": 2048
+                        }
+                    }
+                }
+            }
+        ]
+    }
+]
+
+s3
+[
+    "s3_2_1"
+    {
+        "flow-node-inventory:flow": [
+            {
+                "id": "0",
+                "flow-name": "s3_2_1",
+                "cookie": 256,
+                "instructions": {
+                    "instruction": [
+                        {
+                            "order": 0,
+                            "apply-actions": {
+                                "action": [
+                                    {
+                                        "order": 0,
+                                        "output-action": {
+                                            "output-node-connector": "1"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "priority": 1000,
+                "table_id": 0,
+                "match": {
+                    "ipv4-destination": "10.0.0.1/32",
+                    "in-port": "2",
+                    "ethernet-match": {
+                        "ethernet-type": {
+                            "type": 2048
+                        }
+                    }
+                }
+            }
+        ]
+    }
+
+    "s3_1_2"
+    {
+        "flow-node-inventory:flow": [
+            {
+                "id": "1",
+                "flow-name": "s3_1_2",
+                "cookie": 256,
+                "instructions": {
+                    "instruction": [
+                        {
+                            "order": 0,
+                            "apply-actions": {
+                                "action": [
+                                    {
+                                        "order": 0,
+                                        "output-action": {
+                                            "output-node-connector": "2"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "priority": 1000,
+                "table_id": 0,
+                "match": {
+                    "ipv4-source": "10.0.0.1/32",
+                    "in-port": "1",
+                    "ethernet-match": {
+                        "ethernet-type": {
+                            "type": 2048
+                        }
+                    }
+                }
+            }
+        ]
+    }
+]
